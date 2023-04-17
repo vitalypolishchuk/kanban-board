@@ -1,0 +1,21 @@
+.form {
+  margin: 2rem 0rem 0.5rem 0rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input {
+  display: inline-block;
+  width: 80%;
+  margin-right: 1rem;
+}
+
+.button {
+  width: 20%;
+  max-width: 136.38px;
+}
+
+.star {
+  margin: 0rem 0rem 0 1rem;
+  color: rgb(255, 132, 0);
+}

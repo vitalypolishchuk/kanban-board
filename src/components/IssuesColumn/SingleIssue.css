@@ -1,0 +1,25 @@
+.issue-container {
+  margin: 0.7rem;
+}
+
+.issue-title {
+  font-weight: bold;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+.issue-inner-container {
+  padding: 0.6rem;
+}
+
+.issue-description {
+  font-size: 0.8rem;
+  color: rgb(72, 72, 72);
+  margin: 0.3rem 0;
+}
+
+.issue-container {
+  cursor: grab;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid black;
+}
