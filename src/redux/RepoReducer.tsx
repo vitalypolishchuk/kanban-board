@@ -1,9 +1,9 @@
-import { LOAD_REPO } from "./types";
+import { LOAD_REPO, CLEAR_REPO } from "./types";
 import { RepoType } from "./StateTypes.types";
 
 interface ActionType {
   type: string;
-  payload: RepoType;
+  payload?: RepoType;
 }
 
 const initialState: RepoType = {
@@ -18,6 +18,8 @@ const repoReducer = (state: RepoType = initialState, action: ActionType) => {
   switch (action.type) {
     case LOAD_REPO:
       return action.payload;
+    case CLEAR_REPO:
+      return initialState;
     default:
       return state;
   }

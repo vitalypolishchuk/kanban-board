@@ -1,4 +1,4 @@
-import { LOAD_ISSUES, UPDATE_ISSUES } from "./types";
+import { LOAD_ISSUES, UPDATE_ISSUES, CLEAR_ISSUES } from "./types";
 import { IssueType } from "./StateTypes.types";
 
 interface ActionType {
@@ -14,6 +14,9 @@ const issuesReducer = (state: IssueType[] = initialState, action: ActionType) =>
       return action.payload;
     case UPDATE_ISSUES:
       return action.payload;
+    case CLEAR_ISSUES:
+      console.log(initialState);
+      return initialState;
     default:
       return state;
   }
