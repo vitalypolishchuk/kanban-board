@@ -61,6 +61,7 @@ const SingleIssue = ({
   return (
     <div
       className="issue-container"
+      data-testid={`issue-${number}`}
       onDragOver={(e) => dragOverHandler(e)}
       onDragStart={(e) => dragStartHandler(e, board, item)}
       onDrop={(e) => dropOnIssueHandler(e, board, item)}

@@ -7,7 +7,7 @@ import { setError, loadIssues, updateIssues } from "../../redux/actions";
 import { StateType, IssueType, BoardType } from "../../redux/StateTypes.types";
 import { DragEvent } from "../../EventTypes..types";
 import { useState, useEffect } from "react";
-import SingleIssue from "./SingleIssue";
+import SingleIssue from "../SingleIssue/SingleIssue";
 
 const Issues = () => {
   const [currentBoard, setCurrentBoard] = useState<null | BoardType>(null);
@@ -51,7 +51,7 @@ const Issues = () => {
 
       actions.loadIssues(issuesUrl);
     }
-  }, [repo.profileName]);
+  }, [repo.profileName, repo.repoName]);
 
   useEffect(() => {
     let timeout: ReturnType<typeof setTimeout> | undefined;

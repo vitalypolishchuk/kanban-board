@@ -1,6 +1,6 @@
 import { Dispatch } from "redux";
 import axios from "axios";
-import { LOAD_REPO, LOAD_ISSUES, SET_ERROR, UPDATE_ISSUES, CLEAR_ISSUES, CLEAR_REPO } from "./types";
+import { LOAD_REPO, LOAD_ISSUES, SET_ERROR, UPDATE_REPO, UPDATE_ISSUES, CLEAR_ISSUES, CLEAR_REPO } from "./types";
 import { RepoType, IssueType } from "./StateTypes.types";
 
 type ActionSetError = {
@@ -32,6 +32,10 @@ export const setError = (error: string): ActionSetError => {
 
 export const clearRepo = (): ActionClearRepo => {
   return { type: CLEAR_REPO };
+};
+
+export const updateRepo = (repo: RepoType): { type: string; payload: RepoType } => {
+  return { type: UPDATE_REPO, payload: repo };
 };
 
 export const updateIssues = (issues: IssueType[]): { type: string; payload: IssueType[] } => {

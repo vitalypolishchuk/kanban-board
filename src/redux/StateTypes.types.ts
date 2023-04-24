@@ -1,3 +1,7 @@
+import { store } from "./store";
+
+export type AppStore = ReturnType<typeof store>;
+
 export interface RepoType {
   profileName: string;
   repoName: string;
