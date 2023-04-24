@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./index.css";
+import "./IssuesColumn.css";
 import { bindActionCreators } from "redux";
 import { useDispatch, useSelector } from "react-redux";
 import { setError, loadIssues, updateIssues } from "../../redux/actions";

@@ -1,6 +1,6 @@
 import { render as rtlRender } from "@testing-library/react";
 import { AppStore } from "../../redux/StateTypes.types";
-import Issues from ".";
+import Issues from "./IssuesColumn";
 import { Provider } from "react-redux";
 import { store } from "../../redux/store";
 import { updateIssues, updateRepo } from "../../redux/actions";

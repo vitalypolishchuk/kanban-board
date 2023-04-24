@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Header from "./components/Header/Header";
-import Issues from "./components/IssuesColumn";
+import Issues from "./components/IssuesColumn/IssuesColumn";
 
 const App = () => {
   return (
